@@ -38,7 +38,7 @@ option('max_ethports', type: 'integer', value: 32, description:
        'maximum number of Ethernet devices')
 option('max_lcores', type: 'string', value: 'default', description:
        'Set maximum number of cores/threads supported by EAL; "default" is different per-arch, "detect" detects the number of cores on the build machine.')
-option('max_numa_nodes', type: 'string', value: 'default', description:
+option('max_numa_nodes', type: 'string', value: '1', description:
        'Set the highest NUMA node supported by EAL; "default" is different per-arch, "detect" detects the highest NUMA node on the build machine.')
 option('enable_iova_as_pa', type: 'boolean', value: true, description:
        'Support the use of physical addresses for IO addresses, such as used by UIO or VFIO in no-IOMMU mode. When disabled, DPDK can only run with IOMMU support for address mappings, but will have more space available in the mbuf structure.')

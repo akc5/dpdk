@@ -1,2 +1,3 @@
 # Build a specific example
 meson configure -Dexamples=DIRNAME
+ninja
